@@ -141,6 +141,7 @@ body {
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
 }
 .container .nav {
   float: right;
@@ -160,8 +161,10 @@ body {
   flex-direction: column;
   width: 850px;
   height: 50%;
+  border-radius: 10px;
   padding: 30px;
-  background-color: aliceblue;
+  padding-bottom: 60px;
+  background-color: silver;
 }
 .container .about-me .img {
   width: 40%;
@@ -179,6 +182,7 @@ body {
 .container .about-me hr {
   border: 1px solid black;
   width: 100%;
+  margin-bottom: 30px;
 }
 .container .about-me button {
   background-color: grey;
@@ -189,5 +193,34 @@ body {
   font-weight: bold;
 }
 .container .more-info {
-  border: 4px solid purple;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  justify-content: flex-start;
+}
+.container .more-info .bio {
+  width: 50%;
+  padding: 30px 30px 30px 0;
+}
+.container .more-info .bio h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.container .more-info .skills {
+  width: 50%;
+  padding: 30px 30px 30px 0;
+}
+.container .more-info .skills li {
+  border: 1px solid silver;
+  padding: 10px;
+}
+.container .more-info .skills h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.container .experience .table {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
 }
