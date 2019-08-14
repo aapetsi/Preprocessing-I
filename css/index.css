@@ -142,6 +142,13 @@ body {
   padding-top: 30px;
   font-family: 'Raleway', sans-serif;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+}
 .container .nav {
   float: right;
   width: 40%;
@@ -149,11 +156,25 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .nav {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    float: none;
+  }
+}
 .container .nav .nav-link {
   text-decoration: none;
   width: 65px;
   color: black;
   font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  .container .nav .nav-link {
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 .container .about-me {
   display: flex;
@@ -165,10 +186,21 @@ body {
   padding-bottom: 60px;
   background-color: silver;
 }
+@media (max-width: 500px) {
+  .container .about-me {
+    width: 100%;
+    border: 5px solid green;
+  }
+}
 .container .about-me .img {
   width: 40%;
   height: 40%;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .container .about-me .img {
+    display: none;
+  }
 }
 .container .about-me h1 {
   font-size: 2rem;
@@ -191,6 +223,11 @@ body {
   border-radius: 10px;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .container .about-me button {
+    display: none;
+  }
+}
 .container .more-info {
   display: flex;
   flex-wrap: wrap;
@@ -198,9 +235,25 @@ body {
   line-height: 1.5em;
   justify-content: flex-start;
 }
+@media (max-width: 500px) {
+  .container .more-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+  }
+}
 .container .more-info .bio {
   width: 50%;
   padding: 30px 30px 30px 0;
+}
+@media (max-width: 500px) {
+  .container .more-info .bio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+  }
 }
 .container .more-info .bio h1 {
   font-weight: bold;
@@ -209,6 +262,14 @@ body {
 .container .more-info .skills {
   width: 50%;
   padding: 30px 30px 30px 0;
+}
+@media (max-width: 500px) {
+  .container .more-info .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+  }
 }
 .container .more-info .skills li {
   border: 1px solid silver;
@@ -232,6 +293,29 @@ body {
 }
 .container .experience .table tr:nth-of-type(2n) {
   background-color: lightslategray;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.container .form .input {
+  width: 75%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.container .form .text-area {
+  width: 75%;
+  margin: 0 auto;
+  height: 150px;
+  padding: 15px;
+}
+.container .form .btn {
+  width: 75%;
+  height: 30px;
+  margin: 0 auto;
+  background: lightslategray;
+  border-radius: 20px;
 }
 .container .footer {
   background: lightslategray;
